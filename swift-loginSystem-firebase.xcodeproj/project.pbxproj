@@ -19,6 +19,10 @@
 		2AA523B229D2F496003ED743 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA523B129D2F496003ED743 /* AuthHeaderView.swift */; };
 		2AA523B429D2F50A003ED743 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA523B329D2F50A003ED743 /* CustomTextField.swift */; };
 		2AA523B629D2F567003ED743 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA523B529D2F567003ED743 /* CustomButton.swift */; };
+		2AA523B829D2F93D003ED743 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA523B729D2F93D003ED743 /* Validator.swift */; };
+		2AA523BC29D2F9F1003ED743 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA523B929D2F9F1003ED743 /* User.swift */; };
+		2AA523BD29D2F9F1003ED743 /* RegisterUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA523BA29D2F9F1003ED743 /* RegisterUserRequest.swift */; };
+		2AA523BE29D2F9F1003ED743 /* LoginUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA523BB29D2F9F1003ED743 /* LoginUserRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		2AA523B129D2F496003ED743 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		2AA523B329D2F50A003ED743 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		2AA523B529D2F567003ED743 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		2AA523B729D2F93D003ED743 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		2AA523B929D2F9F1003ED743 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2AA523BA29D2F9F1003ED743 /* RegisterUserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUserRequest.swift; sourceTree = "<group>"; };
+		2AA523BB29D2F9F1003ED743 /* LoginUserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUserRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,7 @@
 				2AA5239229D2F25A003ED743 /* AppDelegate.swift */,
 				2AA5239429D2F25A003ED743 /* SceneDelegate.swift */,
 				2AA5239629D2F25A003ED743 /* ViewController.swift */,
+				2AA523B729D2F93D003ED743 /* Validator.swift */,
 				2AA5239B29D2F25C003ED743 /* Assets.xcassets */,
 				2AA5239D29D2F25C003ED743 /* LaunchScreen.storyboard */,
 				2AA523A029D2F25C003ED743 /* Info.plist */,
@@ -84,6 +93,9 @@
 		2AA523A629D2F31B003ED743 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2AA523BB29D2F9F1003ED743 /* LoginUserRequest.swift */,
+				2AA523BA29D2F9F1003ED743 /* RegisterUserRequest.swift */,
+				2AA523B929D2F9F1003ED743 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,9 +195,13 @@
 				2AA5239729D2F25A003ED743 /* ViewController.swift in Sources */,
 				2AA523AE29D2F3A3003ED743 /* RegisterController.swift in Sources */,
 				2AA523B029D2F3B7003ED743 /* ForgotPasswordController.swift in Sources */,
+				2AA523BE29D2F9F1003ED743 /* LoginUserRequest.swift in Sources */,
 				2AA523B629D2F567003ED743 /* CustomButton.swift in Sources */,
+				2AA523B829D2F93D003ED743 /* Validator.swift in Sources */,
 				2AA5239329D2F25A003ED743 /* AppDelegate.swift in Sources */,
 				2AA523B229D2F496003ED743 /* AuthHeaderView.swift in Sources */,
+				2AA523BD29D2F9F1003ED743 /* RegisterUserRequest.swift in Sources */,
+				2AA523BC29D2F9F1003ED743 /* User.swift in Sources */,
 				2AA5239529D2F25A003ED743 /* SceneDelegate.swift in Sources */,
 				2AA523AC29D2F394003ED743 /* LoginController.swift in Sources */,
 				2AA523B429D2F50A003ED743 /* CustomTextField.swift in Sources */,

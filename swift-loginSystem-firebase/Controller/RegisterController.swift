@@ -42,7 +42,30 @@ class RegisterController: UIViewController {
     }
     
     @objc func didTapSignUp() {
+        let registerUserRequest = RegisterUserRequest(
+            username: self.usernameField.text ?? "",
+            email: self.emailField.text ?? "",
+            password: self.passwordField.text ?? "",
+            phone: Int(self.phoneField.text!) ?? 0
+        )
         
+        if !Validator.isValidUsername(for: registerUserRequest.username) {
+            print("wrong username")
+            return
+        }
+        if !Validator.isValidEmail(for: registerUserRequest.email) {
+            print("wrong email")
+            return
+        }
+        if !Validator.isPasswordValid(for: registerUserRequest.password) {
+            print("wrong username")
+            return
+        }
+        
+        if !Validator.isPhoneValid(for: String(registerUserRequest.phone)) {
+            print("wrong username")
+            return
+        }
     }
     
     @objc private func didTapSignIn() {
