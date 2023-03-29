@@ -23,6 +23,7 @@
 		2AA523BC29D2F9F1003ED743 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA523B929D2F9F1003ED743 /* User.swift */; };
 		2AA523BD29D2F9F1003ED743 /* RegisterUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA523BA29D2F9F1003ED743 /* RegisterUserRequest.swift */; };
 		2AA523BE29D2F9F1003ED743 /* LoginUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA523BB29D2F9F1003ED743 /* LoginUserRequest.swift */; };
+		2AA523C029D3E8ED003ED743 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA523BF29D3E8ED003ED743 /* AlertManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		2AA523B929D2F9F1003ED743 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2AA523BA29D2F9F1003ED743 /* RegisterUserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUserRequest.swift; sourceTree = "<group>"; };
 		2AA523BB29D2F9F1003ED743 /* LoginUserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUserRequest.swift; sourceTree = "<group>"; };
+		2AA523BF29D3E8ED003ED743 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			children = (
 				2AA523BB29D2F9F1003ED743 /* LoginUserRequest.swift */,
 				2AA523BA29D2F9F1003ED743 /* RegisterUserRequest.swift */,
+				2AA523BF29D3E8ED003ED743 /* AlertManager.swift */,
 				2AA523B929D2F9F1003ED743 /* User.swift */,
 			);
 			path = Model;
@@ -193,6 +196,7 @@
 			files = (
 				2AA523AA29D2F384003ED743 /* HomeController.swift in Sources */,
 				2AA5239729D2F25A003ED743 /* ViewController.swift in Sources */,
+				2AA523C029D3E8ED003ED743 /* AlertManager.swift in Sources */,
 				2AA523AE29D2F3A3003ED743 /* RegisterController.swift in Sources */,
 				2AA523B029D2F3B7003ED743 /* ForgotPasswordController.swift in Sources */,
 				2AA523BE29D2F9F1003ED743 /* LoginUserRequest.swift in Sources */,

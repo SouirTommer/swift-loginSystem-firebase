@@ -88,7 +88,19 @@ class LoginController: UIViewController {
     }
     
     @objc private func didTapSignIn() {
-
+        let loginRequest = LoginUserRequest(
+            email: self.emailField.text ?? "",
+            password: self.passwordField.text ?? ""
+        )
+        
+        if !Validator.isValidEmail(for: loginRequest.email) {
+            AlertManager.showInvalidEmailAlert(on: self)
+            return
+        }
+        if !Validator.isPasswordValid(for: loginRequest.password) {
+            AlertManager.showInvalidPasswordAlert(on: self)
+            return
+        }
     }
     @objc private func didTapNewUser() {
         let vc = RegisterController()

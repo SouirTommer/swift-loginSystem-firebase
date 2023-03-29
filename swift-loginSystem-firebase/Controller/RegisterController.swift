@@ -42,6 +42,7 @@ class RegisterController: UIViewController {
     }
     
     @objc func didTapSignUp() {
+        
         let registerUserRequest = RegisterUserRequest(
             username: self.usernameField.text ?? "",
             email: self.emailField.text ?? "",
@@ -50,20 +51,20 @@ class RegisterController: UIViewController {
         )
         
         if !Validator.isValidUsername(for: registerUserRequest.username) {
-            print("wrong username")
+            AlertManager.showInvalidUsernameAlert(on: self)
             return
         }
         if !Validator.isValidEmail(for: registerUserRequest.email) {
-            print("wrong email")
+            AlertManager.showInvalidEmailAlert(on: self)
             return
         }
         if !Validator.isPasswordValid(for: registerUserRequest.password) {
-            print("wrong username")
+            AlertManager.showInvalidPasswordAlert(on: self)
             return
         }
         
         if !Validator.isPhoneValid(for: String(registerUserRequest.phone)) {
-            print("wrong username")
+            AlertManager.showInvalidPhoneAlert(on: self)
             return
         }
     }
