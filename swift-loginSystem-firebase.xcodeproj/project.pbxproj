@@ -29,6 +29,7 @@
 		2AA523C929D3EC45003ED743 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2AA523C829D3EC45003ED743 /* FirebaseDatabaseSwift */; };
 		2AA523CB29D3EC45003ED743 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2AA523CA29D3EC45003ED743 /* FirebaseFirestore */; };
 		2AA523CD29D3EC45003ED743 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2AA523CC29D3EC45003ED743 /* FirebaseStorage */; };
+		2AA523CF29D3F33F003ED743 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA523CE29D3F33F003ED743 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		2AA523BB29D2F9F1003ED743 /* LoginUserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUserRequest.swift; sourceTree = "<group>"; };
 		2AA523BF29D3E8ED003ED743 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		2AA523C129D3EA45003ED743 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2AA523CE29D3F33F003ED743 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				2AA5239229D2F25A003ED743 /* AppDelegate.swift */,
 				2AA5239429D2F25A003ED743 /* SceneDelegate.swift */,
 				2AA523B729D2F93D003ED743 /* Validator.swift */,
+				2AA523CE29D3F33F003ED743 /* AuthService.swift */,
 				2AA523C129D3EA45003ED743 /* GoogleService-Info.plist */,
 				2AA5239B29D2F25C003ED743 /* Assets.xcassets */,
 				2AA5239D29D2F25C003ED743 /* LaunchScreen.storyboard */,
@@ -227,6 +230,7 @@
 				2AA523BD29D2F9F1003ED743 /* RegisterUserRequest.swift in Sources */,
 				2AA523BC29D2F9F1003ED743 /* User.swift in Sources */,
 				2AA5239529D2F25A003ED743 /* SceneDelegate.swift in Sources */,
+				2AA523CF29D3F33F003ED743 /* AuthService.swift in Sources */,
 				2AA523AC29D2F394003ED743 /* LoginController.swift in Sources */,
 				2AA523B429D2F50A003ED743 /* CustomTextField.swift in Sources */,
 			);

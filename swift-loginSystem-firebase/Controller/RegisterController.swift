@@ -67,6 +67,32 @@ class RegisterController: UIViewController {
             AlertManager.showInvalidPhoneAlert(on: self)
             return
         }
+        
+        AuthService.shared.registerUser(with: registerUserRequest) {
+            [weak self]
+            wasRegistered, error in
+            
+            guard let self = self else { return }
+            
+            if let error = error {
+                AlertManager.showRegistrationErrorAlert(on: self, with: error)
+                return
+            }
+            
+            if wasRegistered {
+                
+                self.navigationController?.popToRootViewController(animated: true)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.4){
+                    
+                    AlertManager.showRegisteredAlert(on: self)
+                }
+                
+                
+            } else {
+                AlertManager.showRegistrationErrorAlert(on: self)
+            }
+        }
+
     }
     
     @objc private func didTapSignIn() {
